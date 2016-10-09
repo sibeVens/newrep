@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <title>Web page</title>
+    <link rel="stylesheet" href="200916.css">
+    
+<script>
+    
+function move(x) {
+    console.log("käin " + x);
+    if (x > y) win = "me";
+    else win = "ai";
+    var msg="mina " + "ai ";
+    var place=document.getElementById("result");
+    place.innerHTML=msg;
+}
+    
+var y = aimove();
+
+function aimove() {
+    var x = Math.floor(Math.random()*3)+1;
+    console.log("aimove" + y);
+    return x;
+}
+    
+</script>
+    
+Algus    
+<div class="main">
+<p>gggf</p>
+<div class="maincol leftcol">
+<button onclick="move(1)">Kivi</button>
+<button onclick="move(2)">paber</button>
+<button onclick="move(3)">käärud</button></div>
+<div class="maincol centcol" id="result">Tulemused</div>
+<div class="maincol rightcol">parem</div>
+</div>
+    
+</head>
